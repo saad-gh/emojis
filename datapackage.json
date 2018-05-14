@@ -1,0 +1,187 @@
+{
+  "name": "emojis",
+  "title": "Emojis",
+  "descriptions": "",
+  "licenses": [
+    {
+      "path": "http://www.unicode.org/copyright.html#License",
+      "title": "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
+    }
+  ],
+  "keywords": [],
+  "version": "",
+  "last_updated": "",
+  "sources": [
+    {
+      "title": "Emoji Data",
+      "path": "http://unicode.org/Public/emoji/latest/"
+    },
+    {
+      "title": "CLDR Annotations",
+      "path": [
+        "https://unicode.org/repos/cldr/tags/latest/common/annotations/",
+        "https://unicode.org/repos/cldr/tags/latest/common/annotationsDerived/"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "path": "http://unicode.org/Public/emoji/latest/emoji-data.txt",
+      "name": "Emoji data",
+      "format": "txt",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoint",
+            "type": "string"
+          },
+          {
+            "name": "property",
+            "type": "string"
+          },
+          {
+            "name": "comments",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "http://unicode.org/Public/emoji/latest/emoji-sequences.txt",
+      "name": "Emoji sequence",
+      "format":"txt",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoint",
+            "type": "string"
+          },
+          {
+            "name": "type-field",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "comments",
+            "type": "string"
+          }
+        ]
+      }      
+    },
+    {
+      "path": "http://unicode.org/Public/emoji/latest/emoji-variation-sequences.txt",
+      "name":"Emoji variation sequence",
+      "format":"txt",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoints",
+            "type": "string"
+          },
+          {
+            "name": "variation",
+            "type": "string"
+          },
+          {
+            "name": "comments",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "http://unicode.org/Public/emoji/latest/emoji-zwj-sequences.txt",
+      "name":"Emoji zero-width-joiner sequence",
+      "format":"txt",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoints",
+            "type": "string"
+          },
+          {
+            "name": "type-field",
+            "type": "string"
+          },
+          {
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "name": "comments",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "http://unicode.org/Public/emoji/latest/emoji-test.txt",
+      "name":"Emoji test",
+      "format":"txt",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoints",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "https://unicode.org/repos/cldr/tags/latest/common/annotations/en.xml",
+      "name":"Emoji names and keywords - English",
+      "format":"xml",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoints",
+            "type": "string"
+          },
+          {
+            "name": "emoji-name",
+            "type": "string"
+          },
+          {
+            "name": "keywords",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "https://unicode.org/repos/cldr/tags/latest/common/annotationsDerived/en.xml",
+      "name":"Derived Emoji names and keywords - English",
+      "format":"xml",
+      "host":"remote",
+      "schema": {
+        "fields": [
+          {
+            "name": "codepoints",
+            "type": "string"
+          },
+          {
+            "name": "emoji-name",
+            "type": "string"
+          },
+          {
+            "name": "keywords",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
